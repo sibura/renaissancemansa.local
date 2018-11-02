@@ -1,0 +1,27 @@
+{
+  "name": "wordpresstheme",
+  "version": "1.0.0",
+  "description": "Wordpress base theme with gulp setup and stuffies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Loyiso Ngqwebo",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "child_process": "^1.0.2",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-useref": "^3.1.6",
+    "imagemin-pngquant": "^6.0.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
