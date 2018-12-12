@@ -12,43 +12,43 @@ var pngquant = require('imagemin-pngquant');
 
 
 gulp.task('imagemin', function () {
-    return gulp.src('./wp-content/themes/customtheme/images/*')
+    return gulp.src('./wp-content/themes/renaissance-man/images/*')
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         }))
-        .pipe(gulp.dest('./wp-content/themes/customtheme/images'));
+        .pipe(gulp.dest('./wp-content/themes/renaissance-man/images'));
 });
 
 
 gulp.task('sass', function () {
-  gulp.src('./wp-content/themes/customtheme/sass/**/*.scss')
+  gulp.src('./wp-content/themes/renaissance-man/sass/**/*.scss')
     .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('./wp-content/themes/customtheme'));
+    .pipe(gulp.dest('./wp-content/themes/renaissance-man'));
 });
 
 
 gulp.task('uglify', function() {
-  gulp.src('./wp-content/themes/customtheme/lib/*.js')
-    .pipe(uglify('customtheme.min.js'))
-    .pipe(gulp.dest('./wp-content/themes/customtheme/js'))
+  gulp.src('./wp-content/themes/renaissance-man/lib/*.js')
+    .pipe(uglify('main.min.js'))
+    .pipe(gulp.dest('./wp-content/themes/renaissance-man/js'))
 });
 
 //browsersync 
 gulp.task('browserSync', function() {
   browserSync.init({
-    host: 'http://wordpress.local',
-    proxy: 'http://wordpress.local/',
-    port: 8080,
-    openAutomatically: true,
-    reloadDelay: 50,
-    injectChanges: true,
-    // server: {
-    //   baseDir: './wp-content/themes/customtheme/'
+    host: 'renaissancemensa.local',
+    proxy: 'http://renaissancemensa.local/',
+    port: 8080
+    // openAutomatically: true,
+    // reloadDelay: 50,
+    // injectChanges: true,
+    // // server: {
+    //   baseDir: './wp-content/themes/renaissance-man/'
     // },
   })
 })
@@ -56,12 +56,12 @@ gulp.task('browserSync', function() {
 //watchers
 //sass watcher
 gulp.task('watch', ['browserSync', 'sass', 'uglify'], function(){
-  gulp.watch('./wp-content/themes/customtheme/sass/**/*.scss', ['sass']); 
-  gulp.watch('./wp-content/themes/customtheme/style.css', browserSync.reload); 
-  gulp.watch('./wp-content/themes/customtheme/*.php', browserSync.reload); 
-  gulp.watch('./wp-content/themes/customtheme/js/*.js', browserSync.reload); 
-  gulp.watch('./wp-content/themes/customtheme/parts/**/*.php', browserSync.reload);
-  gulp.watch('./wp-content/themes/customtheme/lib/*.js', ['uglify'], browserSync.reload);
+  gulp.watch('./wp-content/themes/renaissance-man/sass/**/*.scss', ['sass']); 
+  gulp.watch('./wp-content/themes/renaissance-man/style.css', browserSync.reload); 
+  gulp.watch('./wp-content/themes/renaissance-man/*.php', browserSync.reload); 
+  gulp.watch('./wp-content/themes/renaissance-man/js/*.js', browserSync.reload); 
+  gulp.watch('./wp-content/themes/renaissance-man/parts/**/*.php', browserSync.reload);
+  gulp.watch('./wp-content/themes/renaissance-man/lib/*.js', ['uglify'], browserSync.reload);
   // Other watchers
 })
 
@@ -69,9 +69,9 @@ gulp.task('watch', ['browserSync', 'sass', 'uglify'], function(){
 // gulp.task('watch', function(){
 //     livereload.listen();
 
-//     gulp.watch('./wp-content/themes/customtheme/sass/**/*.scss', ['sass']);
-//     gulp.watch('./wp-content/themes/customtheme/lib/*.js', ['uglify']);
-//     gulp.watch(['./wp-content/themes/customtheme/style.css', './wp-content/themes/customtheme/*.php', './wp-content/themes/customtheme/js/*.js', './wp-content/themes/customtheme/parts/**/*.php'], function (files){
+//     gulp.watch('./wp-content/themes/renaissance-man/sass/**/*.scss', ['sass']);
+//     gulp.watch('./wp-content/themes/renaissance-man/lib/*.js', ['uglify']);
+//     gulp.watch(['./wp-content/themes/renaissance-man/style.css', './wp-content/themes/renaissance-man/*.php', './wp-content/themes/renaissance-man/js/*.js', './wp-content/themes/renaissance-man/parts/**/*.php'], function (files){
 //         livereload.changed(files)
 //     });
 // });

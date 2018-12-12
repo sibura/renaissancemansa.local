@@ -1,0 +1,186 @@
+/* =======================================================================
+## ++ Globals
+========================================================================== */
+html{
+    font-size: 100%;
+
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+    background: white;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* =======================================================================
+## ++ Cleafix
+========================================================================== */
+
+/* float clearing for IE6 */
+* html .clearfix{
+ height: 1%;
+ overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+ min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+ clear: both;
+ content: ".";
+ display: block;
+ height: 0;
+ visibility: hidden;
+ font-size: 0;
+}
+
+.clr{clear:both;}
+
+
+/* =======================================================================
+## ++ layouts 
+========================================================================== */
+
+.row {
+  width: 100%;
+  clear: both;
+}
+.container {
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+// header .container {
+//     max-width: 1330px;
+// }
+
+/* =======================================================================
+## ++ Header + top section + logo + Navigation
+========================================================================== */
+header {
+	text-align: left;
+}
+.header-center {
+  text-align: center;
+}
+/*logo*/
+.container.logo {
+    width: 100%;
+    display: flex;
+   justify-content: center;
+}
+
+/*menu*/
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/*toggle*/
+a.menu-link {
+         display: none;
+      }
+  .js nav[role=navigation] {
+    max-height: none;
+  }
+  nav[role=navigation] ul {
+    margin: 0 0 0 -0.25em;
+    border: 0;
+  }
+  
+  nav[role=navigation]  li {
+    display: inline-block;
+    margin: 0 0.25em;
+  }
+  nav[role=navigation] li a {
+    border: 0;
+  }
+/*navigation*/
+.main-nav ul {
+    list-style: none;
+}
+.main-nav ul li {
+    display: inline-block;
+}
+
+
+/* =======================================================================
+## Media Queries
+========================================================================== */
+@media screen and ( max-width: 480px) {
+  a.menu-link {
+        float: right;
+        display: block;
+        padding: 1em;
+    }
+    div#pattern {
+    width: 100%;
+    }
+    nav[role=navigation] {
+      clear: both;
+      -webkit-transition: all 0.3s ease-out;  
+      -moz-transition: all 0.3s ease-out;
+      -ms-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+    }
+    .js nav[role=navigation] {
+      overflow: hidden;
+      max-height: 0;
+    }
+    nav[role=navigation].active {
+      max-height: 15em;
+    }
+    nav[role=navigation] ul {
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid #808080;
+    }
+    nav[role=navigation] li {
+    width: 100%;
+    }
+    nav[role=navigation] li a {
+      display: block;
+      padding: 0.8em;
+      border-bottom: 1px solid #808080;
+    }
+  .main-nav {
+    display: block;
+    position: relative;
+    background: #fff;
+}
+
+.main-nav ul {
+    display: none;
+    position: relative;
+    top: 80%;
+    left: 0px;
+    padding-left: 15px;
+    background: #fff;
+  }
+
+  .main-nav li {
+      display: block;
+      float: none;
+  }
+  
+}

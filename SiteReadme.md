@@ -7,4 +7,4 @@ password: mysql
 
 =========================== cms details ===========================
 username: wordpress@testAdmin
-password: ltZt4zQU&AUpw1ldPb
+password: nP6lpebfalgx&4HexI

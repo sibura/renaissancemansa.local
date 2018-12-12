@@ -1,0 +1,14 @@
+/*!
+Theme Name: Olympos
+Description: Blank Wordpress Theme
+Version: 3.0
+Author: Ivan Dorić
+Author URI: http://www.watch-learn.com/
+Tags: starter theme, light, sass, gulp, livereload
+
+        The CSS, XHTML is released under GPL:
+        http://www.opensource.org/licenses/gpl-license.php
+
+*/html{font-size:100%}body{-webkit-font-smoothing:antialiased;background:white}*{-webkit-box-sizing:border-box;box-sizing:border-box}img{max-width:100%;height:auto}* html .clearfix{height:1%;overflow:visible}*+html .clearfix{min-height:1%}.clearfix:after{clear:both;content:".";display:block;height:0;visibility:hidden;font-size:0}.clr{clear:both}.row{width:100%;clear:both}.container{max-width:1400px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin:0 auto}.left{float:left}.right{float:right}header{text-align:left}.header-center{text-align:center}.container.logo{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.menu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}a.menu-link{display:none}.js nav[role=navigation]{max-height:none}nav[role=navigation] ul{margin:0 0 0 -0.25em;border:0}nav[role=navigation] li{display:inline-block;margin:0 0.25em}nav[role=navigation] li a{border:0}.main-nav ul{list-style:none}.main-nav ul li{display:inline-block}@media screen and (max-width: 480px){a.menu-link{float:right;display:block;padding:1em}div#pattern{width:100%}nav[role=navigation]{clear:both;-webkit-transition:all 0.3s ease-out;transition:all 0.3s ease-out}.js nav[role=navigation]{overflow:hidden;max-height:0}nav[role=navigation].active{max-height:15em}nav[role=navigation] ul{margin:0;padding:0;border-top:1px solid #808080}nav[role=navigation] li{width:100%}nav[role=navigation] li a{display:block;padding:0.8em;border-bottom:1px solid #808080}.main-nav{display:block;position:relative;background:#fff}.main-nav ul{display:none;position:relative;top:80%;left:0px;padding-left:15px;background:#fff}.main-nav li{display:block;float:none}}
+
+/*# sourceMappingURL=style.css.map */
