@@ -1,3 +1,4 @@
+<?php echo do_shortcode("[instagram-feed num=9 cols=4]"); ?>
 <?php
 /**
  * The template for displaying the footer.
@@ -35,7 +36,13 @@
     do_action( 'metro_magazine_page_end' );
     
 
-wp_footer(); ?>
+
+
+
+wp_footer(); 
+
+
+?>
 
 </body>
 </html>

@@ -19,6 +19,7 @@
 
 <head itemscope itemtype="http://schema.org/WebSite">
 
+
 <?php 
     /**
      * Before wp_head

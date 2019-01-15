@@ -1,0 +1,35 @@
+/* CSS Document */
+/*!
+Theme Name:		 Renaissance Man
+Theme URI:		 http://childtheme-generator.com/
+Description:	 Renaissance Man is a child theme of Metro Magazine, created by ChildTheme-Generator.com
+Author:			 Loyiso Ngqwebo
+Author URI:		 http://childtheme-generator.com/
+Template:		 metro-magazine
+Version:		 1.0.0
+Text Domain:	 renaissance-man
+
+*/
+
+/* Vendor */
+@import "susy";
+@import "su";
+
+
+/* Setup */
+@import "reset";
+@import "mixins";
+@import "variables";
+@import "fonts";
+@import "globals";
+
+
+/* WP parts */
+@import "header";
+@import "homepage";
+@import "sidebar";
+@import "footer";
+
+
+
+
