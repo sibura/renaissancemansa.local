@@ -68,3 +68,7 @@ require get_template_directory() . '/css/style.php';
 * Recommended Plugins
 */
 require_once get_template_directory() . '/inc/tgmpa/recommended-plugins.php';
+
+function regis_options($args) {
+   return $args;
+}

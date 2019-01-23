@@ -471,6 +471,10 @@ function xmlrpc_getposttitle( $content ) {
 	return $post_title;
 }
 
+// function regis_options($args) {
+//    return $args;
+// }
+
 /**
  * Retrieve the post category or categories from XMLRPC XML.
  *

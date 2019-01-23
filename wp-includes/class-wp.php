@@ -697,6 +697,7 @@ class WP {
 		nocache_headers();
 	}
 
+
 	/**
 	 * Sets up all of the variables required by the WordPress environment.
 	 *
