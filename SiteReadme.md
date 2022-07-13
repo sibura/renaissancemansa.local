@@ -1,7 +1,7 @@
 =========================== database details ===========================
 dbname: wordpresstheme 
-username: root
-password: mysql
+username: 
+password:
 
 
 
